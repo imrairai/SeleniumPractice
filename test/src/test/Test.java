@@ -29,7 +29,7 @@ public class Test {
         System.setProperty("webdriver.chrome.driver", exePath);
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://ipsqa08.qa.palantirsolutions.com/");
+        driver.get("http://ipsqa06.qa.palantirsolutions.com/");
         driver.findElement(By.id("username")).sendKeys("Administrator");
         driver.findElement(By.cssSelector("button.form-control.btn-primary")).click();
 
