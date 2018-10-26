@@ -41,6 +41,9 @@ public class Test {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("Password")));
         driver.findElement(By.name("Password")).sendKeys("Administrator");
         driver.findElement(By.name("button")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("li.dropdown:nth-child(2) > a:nth-child(1)")));
+        driver.findElement(By.cssSelector("li.dropdown:nth-child(2) > a:nth-child(1)")).click();
+        driver.findElement(By.linkText("Settings")).click();
 
     }
 
